@@ -69,7 +69,7 @@ export default function ArticlesSection() {
             <h2 className="section-title text-4xl md:text-5xl">Научные статьи</h2>
             <div className="divider-orange mt-4" />
           </div>
-          <button className="reveal flex items-center gap-2 text-[hsl(213,80%,22%)] font-body font-semibold text-sm hover:text-orange-500 transition-colors">
+          <button className="reveal flex items-center gap-2 text-[hsl(213,80%,22%)] font-body font-semibold text-sm hover:text-[#0476BB] transition-colors">
             Все статьи
             <Icon name="ArrowRight" size={16} />
           </button>
@@ -79,13 +79,13 @@ export default function ArticlesSection() {
           {/* Featured article */}
           <div className="lg:col-span-1 reveal">
             <div className="bg-gradient-to-br from-[hsl(213,85%,12%)] to-[hsl(213,70%,22%)] rounded-2xl p-8 h-full flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-48 h-48 bg-orange-500/10 rounded-full -translate-y-1/2 translate-x-1/4" />
+              <div className="absolute top-0 right-0 w-48 h-48 bg-[#0476BB]/10 rounded-full -translate-y-1/2 translate-x-1/4" />
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-blue-500/10 rounded-full translate-y-1/2 -translate-x-1/4" />
 
               <div className="relative">
                 <div className="flex gap-2 flex-wrap mb-5">
                   {featured.tags.map(t => (
-                    <span key={t} className="text-xs font-body font-semibold bg-orange-500/20 text-orange-300 px-2.5 py-1 rounded-full">
+                    <span key={t} className="text-xs font-body font-semibold bg-[#0476BB]/20 text-[#5ab5e8] px-2.5 py-1 rounded-full">
                       {t}
                     </span>
                   ))}
@@ -103,7 +103,7 @@ export default function ArticlesSection() {
                   <Icon name="Calendar" size={12} />
                   {featured.date}
                 </div>
-                <button className="flex items-center gap-2 text-orange-400 font-body font-semibold text-sm hover:text-orange-300 transition-colors">
+                <button className="flex items-center gap-2 text-[#0476BB] font-body font-semibold text-sm hover:text-[#5ab5e8] transition-colors">
                   Читать далее
                   <Icon name="ArrowRight" size={14} />
                 </button>
@@ -129,25 +129,25 @@ export default function ArticlesSection() {
                   <div className="flex-1">
                     <div className="flex gap-2 flex-wrap mb-2">
                       {a.tags.map(t => (
-                        <span key={t} className="text-xs font-body text-orange-500 font-semibold uppercase tracking-wider">
+                        <span key={t} className="text-xs font-body text-[#0476BB] font-semibold uppercase tracking-wider">
                           {t}
                         </span>
                       ))}
                     </div>
-                    <h3 className="font-display font-semibold text-[hsl(213,85%,15%)] text-lg uppercase leading-snug mb-2 group-hover:text-orange-500 transition-colors">
+                    <h3 className="font-display font-semibold text-[hsl(213,85%,15%)] text-lg uppercase leading-snug mb-2 group-hover:text-[#0476BB] transition-colors">
                       {a.title}
                     </h3>
                     <p className="text-gray-500 text-sm font-body leading-relaxed line-clamp-2">
                       {a.excerpt}
                     </p>
-                    <button className="mt-3 flex items-center gap-1.5 text-[hsl(213,80%,30%)] text-xs font-body font-semibold hover:text-orange-500 transition-colors">
+                    <button className="mt-3 flex items-center gap-1.5 text-[#0476BB] text-xs font-body font-semibold hover:text-[#035a8f] transition-colors">
                       Читать далее
                       <Icon name="ArrowRight" size={12} />
                     </button>
                   </div>
 
-                  <div className="hidden sm:block w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-orange-50 transition-colors">
-                    <Icon name="ChevronRight" size={14} className="text-gray-400 group-hover:text-orange-500" />
+                  <div className="hidden sm:block w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-blue-50 transition-colors">
+                    <Icon name="ChevronRight" size={14} className="text-gray-400 group-hover:text-[#0476BB]" />
                   </div>
                 </div>
               </div>

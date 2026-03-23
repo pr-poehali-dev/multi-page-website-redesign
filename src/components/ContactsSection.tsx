@@ -45,7 +45,7 @@ export default function ContactsSection() {
   return (
     <section id="contacts" ref={sectionRef} className="py-24 bg-[hsl(213,85%,12%)] relative overflow-hidden">
       <div className="absolute inset-0 grid-pattern" />
-      <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#0476BB]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-6 relative">
@@ -68,12 +68,12 @@ export default function ContactsSection() {
                   href={c.href}
                   className="reveal flex items-center gap-4 group"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/20 transition-colors border border-white/10">
-                    <Icon name={c.icon} size={18} className="text-orange-400" />
+                  <div className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#0476BB]/20 transition-colors border border-white/10">
+                    <Icon name={c.icon} size={18} className="text-[#0476BB]" />
                   </div>
                   <div>
                     <div className="text-white/40 text-xs font-body uppercase tracking-wider mb-0.5">{c.label}</div>
-                    <div className="text-white font-body font-medium text-sm group-hover:text-orange-300 transition-colors">
+                    <div className="text-white font-body font-medium text-sm group-hover:text-[#5ab5e8] transition-colors">
                       {c.value}
                     </div>
                   </div>
@@ -112,7 +112,7 @@ export default function ContactsSection() {
                   </p>
                   <button
                     onClick={() => { setSent(false); setForm({ name: '', phone: '', message: '' }); }}
-                    className="mt-6 text-sm text-[hsl(213,80%,30%)] font-body font-semibold hover:text-orange-500 transition-colors"
+                    className="mt-6 text-sm text-[#0476BB] font-body font-semibold hover:text-[#035a8f] transition-colors"
                   >
                     Отправить ещё одно сообщение
                   </button>

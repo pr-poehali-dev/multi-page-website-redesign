@@ -27,7 +27,7 @@ const certs = [
     org: 'Министерство строительства',
     num: 'Л-2023-0789',
     year: '2023',
-    color: 'from-orange-700 to-orange-500',
+    color: 'from-[#035a8f] to-[#0476BB]',
   },
   {
     id: 4,
@@ -127,7 +127,7 @@ export default function CertificatesSection() {
 
                 {selected === cert.id && (
                   <div className="mt-3 pt-3 border-t border-gray-100">
-                    <button className="text-xs text-[hsl(213,80%,30%)] font-semibold font-body flex items-center gap-1 hover:text-orange-500 transition-colors">
+                    <button className="text-xs text-[#0476BB] font-semibold font-body flex items-center gap-1 hover:text-[#035a8f] transition-colors">
                       <Icon name="Download" size={12} />
                       Скачать документ
                     </button>

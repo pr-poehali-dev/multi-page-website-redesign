@@ -97,7 +97,7 @@ export default function AboutSection() {
                     { v: '20', l: 'лет опыта' },
                   ].map((s, i) => (
                     <div key={i} className="text-center">
-                      <div className="font-display font-bold text-2xl text-orange-400">{s.v}</div>
+                      <div className="font-display font-bold text-2xl text-[#0476BB]">{s.v}</div>
                       <div className="text-white/70 text-xs font-body">{s.l}</div>
                     </div>
                   ))}
@@ -107,7 +107,7 @@ export default function AboutSection() {
 
             {/* Floating card */}
             <div className="absolute -top-6 -right-6 bg-[hsl(213,85%,15%)] text-white rounded-xl p-5 shadow-xl border border-white/10 animate-float">
-              <div className="font-display font-bold text-3xl text-orange-400">СРО</div>
+              <div className="font-display font-bold text-3xl text-[#0476BB]">СРО</div>
               <div className="text-white/70 text-xs font-body mt-1">Допуски и свидетельства</div>
             </div>
           </div>

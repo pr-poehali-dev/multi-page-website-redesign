@@ -45,7 +45,7 @@ export default function HeroSection() {
         if (p.y > canvas.height) p.y = 0;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(249,115,22,${p.alpha})`;
+        ctx.fillStyle = `rgba(4,118,187,${p.alpha})`;
         ctx.fill();
       });
       animId = requestAnimationFrame(animate);
@@ -133,8 +133,8 @@ export default function HeroSection() {
           {stats.map((s, i) => (
             <div key={i} className="flex items-center gap-4">
               <div>
-                <div className="font-display font-bold text-4xl md:text-5xl text-orange-400 leading-none">
-                  {s.value}<span className="text-orange-500">{s.suffix}</span>
+                <div className="font-display font-bold text-4xl md:text-5xl text-[#0476BB] leading-none">
+                  {s.value}<span className="text-[#0590e0]">{s.suffix}</span>
                 </div>
                 <div className="text-white/60 text-sm font-body mt-1">{s.label}</div>
               </div>

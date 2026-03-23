@@ -51,20 +51,20 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between py-2">
           <div className="flex items-center gap-6 text-xs text-white/60">
             <span className="flex items-center gap-1.5">
-              <Icon name="MapPin" size={12} className="text-orange-400" />
+              <Icon name="MapPin" size={12} className="text-[#0476BB]" />
               г. Краснодар, ул. Чапаева, 127
             </span>
             <span className="flex items-center gap-1.5">
-              <Icon name="Clock" size={12} className="text-orange-400" />
+              <Icon name="Clock" size={12} className="text-[#0476BB]" />
               Пн–Пт: 9:00 – 18:00
             </span>
           </div>
           <div className="flex items-center gap-5 text-xs text-white/60">
-            <a href="mailto:bz@kuban-bz.ru" className="flex items-center gap-1.5 hover:text-orange-400 transition-colors">
+            <a href="mailto:bz@kuban-bz.ru" className="flex items-center gap-1.5 hover:text-[#0476BB] transition-colors">
               <Icon name="Mail" size={12} />
               bz@kuban-bz.ru
             </a>
-            <button className="text-xs bg-orange-500/20 border border-orange-500/40 text-orange-300 px-3 py-1 rounded hover:bg-orange-500/30 transition-colors">
+            <button className="text-xs bg-[#0476BB]/20 border border-[#0476BB]/40 text-[#5ab5e8] px-3 py-1 rounded hover:bg-[#0476BB]/30 transition-colors">
               Заказать звонок
             </button>
           </div>
@@ -76,7 +76,7 @@ export default function Header() {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <button onClick={() => scrollTo('#home')} className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#0476BB] to-[#035a8f] flex items-center justify-center flex-shrink-0">
               <span className="font-display font-bold text-white text-lg">Б</span>
             </div>
             <div className="leading-tight">
@@ -105,9 +105,9 @@ export default function Header() {
           {/* Phone */}
           <a
             href="tel:+78612519359"
-            className="hidden lg:flex items-center gap-2 text-white font-body font-semibold text-lg hover:text-orange-400 transition-colors"
+            className="hidden lg:flex items-center gap-2 text-white font-body font-semibold text-lg hover:text-[#0476BB] transition-colors"
           >
-            <Icon name="Phone" size={16} className="text-orange-400" />
+            <Icon name="Phone" size={16} className="text-[#0476BB]" />
             +7 (861) 251-93-59
           </a>
 
@@ -133,7 +133,7 @@ export default function Header() {
               {item.label}
             </button>
           ))}
-          <a href="tel:+78612519359" className="text-orange-400 font-semibold text-lg pt-2">
+          <a href="tel:+78612519359" className="text-[#0476BB] font-semibold text-lg pt-2">
             +7 (861) 251-93-59
           </a>
         </div>

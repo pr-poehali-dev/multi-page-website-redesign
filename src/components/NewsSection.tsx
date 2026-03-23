@@ -63,7 +63,7 @@ export default function NewsSection() {
             <h2 className="section-title text-4xl md:text-5xl">Последние новости</h2>
             <div className="divider-orange mt-4" />
           </div>
-          <button className="reveal flex items-center gap-2 text-[hsl(213,80%,22%)] font-body font-semibold text-sm hover:text-orange-500 transition-colors">
+          <button className="reveal flex items-center gap-2 text-[hsl(213,80%,22%)] font-body font-semibold text-sm hover:text-[#0476BB] transition-colors">
             Все новости
             <Icon name="ArrowRight" size={16} />
           </button>
@@ -80,7 +80,7 @@ export default function NewsSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[hsl(213,85%,10%)]/80 to-transparent" />
               <div className="absolute top-4 left-4">
-                <span className="bg-orange-500 text-white text-xs font-body font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                <span className="bg-[#0476BB] text-white text-xs font-body font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
                   {featured.tag}
                 </span>
               </div>
@@ -89,7 +89,7 @@ export default function NewsSection() {
                   <Icon name="Calendar" size={12} />
                   {featured.date}
                 </div>
-                <h3 className="font-display font-bold text-white text-xl uppercase leading-snug group-hover:text-orange-300 transition-colors">
+                <h3 className="font-display font-bold text-white text-xl uppercase leading-snug group-hover:text-[#5ab5e8] transition-colors">
                   {featured.title}
                 </h3>
               </div>
@@ -97,7 +97,7 @@ export default function NewsSection() {
             <p className="text-gray-500 text-sm font-body leading-relaxed">
               {featured.excerpt}
             </p>
-            <button className="mt-4 flex items-center gap-2 text-[hsl(213,80%,22%)] font-body font-semibold text-sm hover:text-orange-500 transition-colors group-hover:text-orange-500">
+            <button className="mt-4 flex items-center gap-2 text-[hsl(213,80%,22%)] font-body font-semibold text-sm hover:text-[#0476BB] transition-colors group-hover:text-[#0476BB]">
               Читать далее
               <Icon name="ArrowRight" size={14} />
             </button>
@@ -113,10 +113,10 @@ export default function NewsSection() {
                 </div>
                 <div className="flex flex-col justify-between flex-1">
                   <div>
-                    <span className="text-orange-500 text-xs font-body font-semibold uppercase tracking-wider">
+                    <span className="text-[#0476BB] text-xs font-body font-semibold uppercase tracking-wider">
                       {n.tag}
                     </span>
-                    <h3 className="font-display font-semibold text-[hsl(213,85%,15%)] text-sm uppercase leading-snug mt-1 group-hover:text-orange-500 transition-colors">
+                    <h3 className="font-display font-semibold text-[hsl(213,85%,15%)] text-sm uppercase leading-snug mt-1 group-hover:text-[#0476BB] transition-colors">
                       {n.title}
                     </h3>
                   </div>
@@ -130,7 +130,7 @@ export default function NewsSection() {
 
             {/* CTA card */}
             <div className="reveal bg-gradient-to-br from-[hsl(213,85%,15%)] to-[hsl(213,70%,25%)] rounded-xl p-6 text-white relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#0476BB]/10 rounded-full -translate-y-1/2 translate-x-1/2" />
               <div className="font-display font-bold text-xl uppercase mb-2">Подпишитесь на новости</div>
               <p className="text-white/60 text-xs font-body mb-4">Будьте в курсе событий компании</p>
               <button className="orange-btn px-5 py-2.5 rounded font-display font-semibold text-sm tracking-wide uppercase w-full">

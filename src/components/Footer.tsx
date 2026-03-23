@@ -33,7 +33,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#0476BB] to-[#035a8f] flex items-center justify-center">
                 <span className="font-display font-bold text-white text-lg">Б</span>
               </div>
               <div>
@@ -47,8 +47,8 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               {['Mail', 'Phone'].map(icon => (
-                <div key={icon} className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center hover:bg-orange-500/20 transition-colors cursor-pointer">
-                  <Icon name={icon} size={14} className="text-orange-400" />
+                <div key={icon} className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#0476BB]/20 transition-colors cursor-pointer">
+                  <Icon name={icon} size={14} className="text-[#0476BB]" />
                 </div>
               ))}
             </div>
@@ -64,9 +64,9 @@ export default function Footer() {
                 <li key={l.href}>
                   <button
                     onClick={() => scrollTo(l.href)}
-                    className="text-white/50 text-xs font-body hover:text-orange-400 transition-colors flex items-center gap-2"
+                    className="text-white/50 text-xs font-body hover:text-[#0476BB] transition-colors flex items-center gap-2"
                   >
-                    <span className="w-3 h-px bg-orange-500/50" />
+                    <span className="w-3 h-px bg-[#0476BB]/50" />
                     {l.label}
                   </button>
                 </li>
@@ -81,8 +81,8 @@ export default function Footer() {
             </div>
             <ul className="space-y-2.5">
               {services.map(s => (
-                <li key={s} className="text-white/50 text-xs font-body hover:text-orange-400 transition-colors cursor-pointer flex items-center gap-2">
-                  <span className="w-3 h-px bg-orange-500/50" />
+                <li key={s} className="text-white/50 text-xs font-body hover:text-[#0476BB] transition-colors cursor-pointer flex items-center gap-2">
+                  <span className="w-3 h-px bg-[#0476BB]/50" />
                   {s}
                 </li>
               ))}
@@ -101,8 +101,8 @@ export default function Footer() {
                 { icon: 'MapPin', v: 'г. Краснодар, ул. Чапаева, 127', href: '#' },
               ].map((c, i) => (
                 <a key={i} href={c.href} className="flex items-start gap-2.5 group">
-                  <Icon name={c.icon} size={14} className="text-orange-400 mt-0.5 flex-shrink-0" />
-                  <span className="text-white/50 text-xs font-body group-hover:text-orange-300 transition-colors">
+                  <Icon name={c.icon} size={14} className="text-[#0476BB] mt-0.5 flex-shrink-0" />
+                  <span className="text-white/50 text-xs font-body group-hover:text-[#5ab5e8] transition-colors">
                     {c.v}
                   </span>
                 </a>

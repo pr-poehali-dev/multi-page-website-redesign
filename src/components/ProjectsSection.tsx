@@ -142,7 +142,7 @@ export default function ProjectsSection() {
                 {/* Tag */}
                 <div className={`absolute top-3 left-3 text-xs font-body font-semibold px-2.5 py-1 rounded-full ${
                   p.tag === 'В работе' 
-                    ? 'bg-orange-500 text-white' 
+                    ? 'bg-[#0476BB] text-white' 
                     : 'bg-[hsl(213,80%,22%)] text-white'
                 }`}>
                   {p.tag}
@@ -150,7 +150,7 @@ export default function ProjectsSection() {
 
                 {/* Hover overlay content */}
                 <div className="absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button className="flex items-center gap-2 text-white text-sm font-body font-semibold bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 transition-colors">
+                  <button className="flex items-center gap-2 text-white text-sm font-body font-semibold bg-[#0476BB] px-4 py-2 rounded hover:bg-[#035a8f] transition-colors">
                     <Icon name="Eye" size={14} />
                     Подробнее
                   </button>
@@ -158,7 +158,7 @@ export default function ProjectsSection() {
               </div>
               <div>
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="text-xs text-orange-500 font-body font-semibold uppercase tracking-wider">{p.cat}</span>
+                  <span className="text-xs text-[#0476BB] font-body font-semibold uppercase tracking-wider">{p.cat}</span>
                   <span className="text-gray-300">·</span>
                   <span className="text-xs text-gray-400 font-body">{p.year}</span>
                   <span className="text-gray-300">·</span>
@@ -167,7 +167,7 @@ export default function ProjectsSection() {
                     {p.location}
                   </span>
                 </div>
-                <h3 className="font-display font-semibold text-[hsl(213,85%,15%)] text-lg leading-snug uppercase group-hover:text-orange-500 transition-colors">
+                <h3 className="font-display font-semibold text-[hsl(213,85%,15%)] text-lg leading-snug uppercase group-hover:text-[#0476BB] transition-colors">
                   {p.title}
                 </h3>
               </div>
@@ -223,7 +223,7 @@ export default function ProjectsSection() {
                         <div className="font-display font-semibold text-[hsl(213,85%,15%)] text-sm uppercase">
                           {dot.label}
                         </div>
-                        <div className="text-orange-500 text-xs font-body font-semibold mt-0.5">
+                        <div className="text-[#0476BB] text-xs font-body font-semibold mt-0.5">
                           {dot.count} проектов
                         </div>
                         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-2 h-2 bg-white rotate-45 -mt-1" />
@@ -241,7 +241,7 @@ export default function ProjectsSection() {
                   ].map((s, i) => (
                     <div key={i} className="flex items-center justify-between gap-8 py-1 border-b border-white/10 last:border-0">
                       <span className="text-white/60 text-xs font-body">{s.label}</span>
-                      <span className="text-orange-400 font-display font-bold text-base">{s.v}</span>
+                      <span className="text-[#0476BB] font-display font-bold text-base">{s.v}</span>
                     </div>
                   ))}
                 </div>
